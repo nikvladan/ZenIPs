@@ -1,92 +1,58 @@
-# ZenIP Template
-
-*If this is your first time writing a ZenIP, the structure and format may look intimidating. But really, it's just meant to reflect common-sense practice and some technical conventions. This template is meant to be a starting point for you to structure your ideas. It might help to sort the different aspects of your proposal into the structure below in order get your idea across efficiently. The community and ZenIP editors will help you figure things out and get your proposal into a proper shape later.*
-
 ## Header Preamble
 
     ZenIP: Unassigned (numbers are assigned by ZenIP editors)
-    Title: *Something Short and To the Point*
-    Owners: First Owner <email>
+    Title: Redistribution of rewards from Horizen daily inflation
+    Owners: nikvladan(Alias Trololino) lordhakkira@yahoo.com
     ...
     Status: Draft
-    Category: (Consensus | Standards Track |Informational | Process)
-    Created: yyyy-mm-dd
-    License: MIT (see the licensing section of ZenIP-42000)
+    Category: (Consensus)
+    Created: 2020-09-21
+    License: MIT
 
 ## Table of Contents
 
-*Please always include a table of contents, e.g.*
+-Terminology
+-Abstract
+-Motivation
+-Requirements
+-Non-requirements
+-Specification
+
 
 ## Terminology
 
 The key words "MUST", "MUST NOT", "SHOULD", and "MAY" in this document are to
 be interpreted as described in [RFC 2119](#references).
 
-The terms below are to be interpreted as follows:
-
-- Term to be defined
-  - definition
-- Another term
-  - another definition
-
 ## Abstract
 
-*Describe what this proposal does, typically in a few paragraphs.*
-
-The Abstract should only provide a summary of the ZenIP; the ZenIP should remain complete without the Abstract.
-Use links where applicable, e.g. [[3]](#references).
+This proposal suggests a change in daily distribution of Horizen rewards and changing requirements for hosting secure nodes and supernodes.
+Specifies a time when this change should activate. 
 
 ## Motivation
 
-*Why is this proposal needed?*
-
-This is one of the most important sections of the ZenIP, and should be detailed
-and comprehensive. It shouldn't include any of the actual specification -
-don't put conformance requirements in this section.
-
-Explain the status quo, why the status quo is in need of improvement,
-and if applicable, the history of how this area has changed. Then describe
-*at a high level* why this proposed solution addresses the perceived issues.
-It is ok if this is somewhat redundant with the abstract, but here you can
-go into a lot more detail.
+After Horizen halving which will happen in approximately 71 days from today, rewards for holders that host secure nodes and supernodes will reduce in half. Due to price of Zen
+dropping so low as to bellow 5.4$ as it is at this moment of writting this project, hosting secure nodes as well as supernodes will become unprofitable. Secure nodes and super node owners pay for hosting each month (as well as domain name each year for supernodes).
+Increased rewards have to come from somewhere, and in this proposal its suggested they are taken from miners. Ever since Q1 2018 when ASIC miners first appeared on Equihash network, they have been decreasing the price of Zen without any sign of stopping. This will also decrease their selling pressure on the markets, as well as halving event. As for security, measures are implemented to aid against 51% attack already. Additional measures can be taken, but this is not the point i want to discuss in this proposal. 
+Horizen fauced which has been mentioned a lot of times in weekly/quarterly reports and streams is irrelevant atm and rewards are not even worth opening the page. Making some of the rewards go directly to Horizen faucet will get a lot of people involved in ZEN, who don't have any means of buying ASIC miners, and will increase the community involvement. 
 
 ## Requirements
 
-*Describe design constraints on, or goals for the solution -- typically one paragraph for each constraint or goal.*
+For this proposal, I assume hard fork is needed to redistribute the rewards. Hard fork would happen right after the halving (71 days from now). 
+Requirements for hosting secure nodes will rise to 84 ZEN, and SuperNodes to 1000 ZEN.  
 
-Again, don't actually specify anything here; this section is primarily for use as a consistency check that what is specified meets the requirements.
-
-## Non-requirements
-
-*This section is entirely optional. If it is present, it describes issues that the proposal is **not** attempting to address, that someone might otherwise think it does or should.*
 
 ## Specification
 
-*This section describes what should change, using precise language and conformance key words.*
+After Halving event, daily inflation on Horizen network will drop to 3600 ZEN. I propose the rewards be distributed in following manner:
+20% (720 ZEN) to the team for development purposes
+20% (720 ZEN) to secure nodes (same as it is now before halving)
+20% (720 ZEN) to super nodes (same as it is now before halving)
+35% (1250 ZEN) to miners for securing the network,
+5% (180 ZEN) directly to zen faucet to get new community members. 
 
-Anything that is *required in order to implement the ZenIP* (or follow its
-process, in the case of a Process ZenIP) should be in this section.
 
-Avoid overspecification! Also avoid underspecification. Specification is hard.
-Don't be afraid to ask for help.
-Unless the specification is particularly simple, you will need to organise it under
-subheadings.
 
-### Example Subheading
-
-At least while the ZenIP is in Draft, we encourage writing open questions and TODOs.
-
-#### Open Questions
-
-- What do hackers do on a boat?
-
-TODO: define byte encoding for the phishing trip.
-
-Feel free to copy from other ZenIPs doing similar things.
-
-## Reference Implementation
-
-This section is entirely optional; if present, it usually gives links to PRs.
 
 ## References
 
@@ -94,4 +60,4 @@ This section is entirely optional; if present, it usually gives links to PRs.
 
 [2] RFC2119 - Key words for use in RFCs to Indicate Requirement Levels https://tools.ietf.org/html/rfc2119
 
-[3] Example reference
+[3] https://github.com/HorizenOfficial/ZenIPs/blob/master/zenip_template.md
